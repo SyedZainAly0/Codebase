@@ -1,8 +1,10 @@
 import React from "react";
+import { useState } from "react";
 import { BrowserRouter, Routes, Route, Link, useNavigate } from "react-router-dom";
 import "./style.css";
 
 function Mainpage() {
+     const navigate = useNavigate();
   return (
     <div className="main-container">
       
@@ -13,7 +15,7 @@ function Mainpage() {
          Exceptional flavors. Elegant surroundings.
         </p>
 
-        <button className="hero-btn">
+        <button className="hero-btn" onClick={() => navigate("/contact")}>
           Reserve Your Table
         </button>
       </section>
@@ -44,22 +46,133 @@ function Homepage() {
   const navigate = useNavigate();
 
   return (
-    <div className="page">
-      <h1>Home</h1>
-      <p>This is your home page</p>
-      <button onClick={() => navigate("/")}>Go to Main Page</button>
+    <div className="home-container">
+
+      {/* HERO SECTION */}
+      <section className="home-hero">
+        <h1>Discover Our World</h1>
+        <p>Explore our story, services, and what makes us special</p>
+      </section>
+
+      {/* ABOUT SECTION */}
+      <section className="home-section">
+        <h2>Who We Are</h2>
+        <p>
+          We are passionate about delivering high-quality experiences with
+          attention to detail and customer satisfaction.
+        </p>
+      </section>
+
+      {/* SERVICES SECTION */}
+      <section className="home-section cards">
+        <div className="card">
+          <h3>⚡ Fast Service</h3>
+          <p>Quick and efficient delivery for all customers</p>
+        </div>
+
+        <div className="card">
+          <h3>💎 Premium Quality</h3>
+          <p>We never compromise on quality</p>
+        </div>
+
+        <div className="card">
+          <h3>🤝 Customer First</h3>
+          <p>Your satisfaction is our top priority</p>
+        </div>
+      </section>
+
+      {/* CTA SECTION */}
+      <section className="home-cta">
+        <h2>Want to Explore More?</h2>
+        <button onClick={() => navigate("/")}>
+          Go to Dashboard
+        </button>
+      </section>
+
     </div>
   );
 }
 
+
 function Contactus() {
   const navigate = useNavigate();
 
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    order: "",
+    message: ""
+  });
+
+  const handleChange = (e) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value
+    });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    console.log("User Data:", formData);
+
+    alert("Order Submitted Successfully ");
+
+    setFormData({
+      name: "",
+      email: "",
+      order: "",
+      message: ""
+    });
+  };
+
   return (
-    <div className="page">
-      <h1>Contact</h1>
-      <p>Feel free to contact us anytime 📩</p>
-      <button onClick={() => navigate("/")}>Go to Main Page</button>
+    <div className="contact-container">
+      <h1>Contact / Order</h1>
+      <p>Place your order or send us a message </p>
+
+      <form onSubmit={handleSubmit} className="contact-form">
+        
+        <input
+          type="text"
+          name="name"
+          placeholder="Your Name"
+          value={formData.name}
+          onChange={handleChange}
+          required
+        />
+
+        <input
+          type="email"
+          name="email"
+          placeholder="Your Email"
+          value={formData.email}
+          onChange={handleChange}
+          required
+        />
+
+        <input
+          type="text"
+          name="order"
+          placeholder="Your Order"
+          value={formData.order}
+          onChange={handleChange}
+        />
+
+        <textarea
+          name="message"
+          placeholder="Your Message"
+          value={formData.message}
+          onChange={handleChange}
+          rows="4"
+        />
+
+        <button type="submit">Submit Order</button>
+      </form>
+
+      <button className="back-btn" onClick={() => navigate("/")}>
+        Go to Main Page
+      </button>
     </div>
   );
 }
