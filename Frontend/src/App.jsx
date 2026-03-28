@@ -4,7 +4,7 @@ import Normalcomponent from './FunctionComponent' // using Default Import
 import { Properties as Data } from './Props'
 import Propsdestructuring from './Props'
 import States from './States'
-
+import Icon from './Routing'
 
 function App() {
   return (
@@ -17,6 +17,8 @@ function App() {
     <Propsdestructuring name="ABC" course="Django-Python" time="Evening" value={`value is: 4`}/>
 
     <States/>
+
+    <Icon/>
 
     </>
   )
