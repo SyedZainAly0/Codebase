@@ -9,14 +9,14 @@ import Icon from './Routing'
 function App() {
   return (
     <>
-    <First/>
+    {/* <First/>
     <Second/>
     <Normalcomponent/>
 
     <Data Props={{name:"XYZ", course:"React-FastAPI"}} />
     <Propsdestructuring name="ABC" course="Django-Python" time="Evening" value={`value is: 4`}/>
 
-    <States/>
+    <States/> */}
 
     <Icon/>
 
