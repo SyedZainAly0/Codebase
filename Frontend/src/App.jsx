@@ -10,6 +10,7 @@ import Maincomponent from './NestedComponent'
 import Defaultprops from './DefaultProp'
 import Childrenprop from './ChildrenProps'
 import TextInputWithFocusButton from './useRef'
+import App1 from './FunctionProp'
 
 function App() {
   return (
@@ -44,6 +45,8 @@ function App() {
 
     {/* <TextInputWithFocusButton/> */}
 
+     <App1/>
+   
     </>
   )
 
