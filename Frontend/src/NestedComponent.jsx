@@ -23,6 +23,7 @@ function ThirdComponent(){
         <>
         <Secondcomponent/>
         <h3>Thanks for Visiting</h3>
+        <button>Click</button>
         </>
     )
 }
