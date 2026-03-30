@@ -7,24 +7,41 @@ import States from './States'
 import Icon from './Routing'
 import Timer from './useEffect'
 import Maincomponent from './NestedComponent'
+import Defaultprops from './DefaultProp'
+import Childrenprop from './ChildrenProps'
+
 
 function App() {
   return (
     <>
-    {/* <First/>
-    <Second/>
-    <Normalcomponent/>
 
-    <Data Props={{name:"XYZ", course:"React-FastAPI"}} />
-    <Propsdestructuring name="ABC" course="Django-Python" time="Evening" value={`value is: 4`}/>
+    {/* <First/> */}
 
-    <States/> */}
+    {/* <Second/> */}
+
+    {/* <Normalcomponent/> */}
+
+    {/* <Data Props={{name:"XYZ", course:"React-FastAPI"}} /> */}
+
+    {/* <Propsdestructuring name="ABC" course="Django-Python" time="Evening" value={`value is: 4`}/>    */}
+
+    {/* <States/> */}
 
     {/* <Icon/> */}
 
     {/* <Timer/> */}
 
-    <Maincomponent/>
+    {/* <Maincomponent/> */}
+
+    {/* <Defaultprops/> */}
+
+    {/* <Defaultprops name="Ali"/> */}
+
+    <Childrenprop>
+      <h2>This is from parent component</h2>
+      <button>click Me</button>
+    </Childrenprop>
+
     </>
   )
 
