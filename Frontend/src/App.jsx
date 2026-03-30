@@ -37,10 +37,11 @@ function App() {
 
     {/* <Defaultprops name="Ali"/> */}
 
-    <Childrenprop>
+    {/* <Childrenprop>
       <h2>This is from parent component</h2>
       <button>click Me</button>
-    </Childrenprop>
+    </Childrenprop> */}
+
 
     </>
   )
