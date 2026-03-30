@@ -39,13 +39,13 @@ function App() {
     {/* <Defaultprops name="Ali"/> */}
 
     {/* <Childrenprop>
-      <h2>This is from parent component</h2>
+      <h2>Thi<App1/>s is from parent component</h2>
       <button>click Me</button>
     </Childrenprop> */}
 
     {/* <TextInputWithFocusButton/> */}
 
-     <App1/>
+     {/* <App1/> */}
    
     </>
   )
