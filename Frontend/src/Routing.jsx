@@ -8,7 +8,7 @@ function Mainpage() {
   return (
     <div className="main-container">
       
-      {/* HERO SECTION */}
+  
       <section className="hero">
         <h1>Welcome to Resturent</h1>
         <p>
@@ -20,7 +20,6 @@ function Mainpage() {
         </button>
       </section>
 
-      {/* FEATURES SECTION */}
       <section className="features">
         <div className="card">
           <h3>🍽 Fine Dining</h3>
@@ -48,13 +47,13 @@ function Homepage() {
   return (
     <div className="home-container">
 
-      {/* HERO SECTION */}
+  
       <section className="home-hero">
         <h1>Discover Our World</h1>
         <p>Explore our story, services, and what makes us special</p>
       </section>
 
-      {/* ABOUT SECTION */}
+
       <section className="home-section">
         <h2>Who We Are</h2>
         <p>
@@ -63,7 +62,6 @@ function Homepage() {
         </p>
       </section>
 
-      {/* SERVICES SECTION */}
       <section className="home-section cards">
         <div className="card">
           <h3>⚡ Fast Service</h3>
@@ -81,7 +79,6 @@ function Homepage() {
         </div>
       </section>
 
-      {/* CTA SECTION */}
       <section className="home-cta">
         <h2>Want to Explore More?</h2>
         <button onClick={() => navigate("/")}>

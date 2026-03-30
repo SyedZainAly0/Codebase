@@ -5,6 +5,8 @@ import { Properties as Data } from './Props'
 import Propsdestructuring from './Props'
 import States from './States'
 import Icon from './Routing'
+import Timer from './useEffect'
+import Maincomponent from './NestedComponent'
 
 function App() {
   return (
@@ -18,8 +20,11 @@ function App() {
 
     <States/> */}
 
-    <Icon/>
+    {/* <Icon/> */}
 
+    {/* <Timer/> */}
+
+    <Maincomponent/>
     </>
   )
 
