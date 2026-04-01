@@ -30,7 +30,7 @@ function App() {
 
     {/* <Icon/> */}
 
-    {/* <Timer/> */}
+    <Timer/>
 
     {/* <Maincomponent/> */}
 
@@ -45,7 +45,7 @@ function App() {
 
     {/* <TextInputWithFocusButton/> */}
 
-     {/* <App1/> */}
+    {/* <App1/> */}
    
     </>
   )

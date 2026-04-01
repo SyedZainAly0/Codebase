@@ -220,7 +220,9 @@ function Icon() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Mainpage />} />
-        <Route path="/home" element={<Homepage />} />
+        <Route path="/home" element={<Homepage />}>
+        
+        </Route>
         <Route path="/contact" element={<Contactus />} />
         <Route path="/about" element={<About />} />
       </Routes>
