@@ -1,7 +1,7 @@
 import React from "react";
 
-// HOC definition
-function withAuth(WrappedComponent) {
+
+function auth(WrappedComponent) {
   return function AuthComponent(props) {
     const isLoggedIn = true; 
 
@@ -19,7 +19,7 @@ function Dashboard() {
 }
 
 
-const ProtectedDashboard = withAuth(Dashboard);
+const ProtectedDashboard = auth(Dashboard);
 
 
 function Data() {
