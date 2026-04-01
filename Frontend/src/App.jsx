@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { Mycomponent as First, Mycomponent1 as Second } from './FunctionComponent' // using named Import
 import Normalcomponent from './FunctionComponent' // using Default Import
-import { Properties as Data } from './Props'
+import { Properties as Data1 } from './Props'
 import Propsdestructuring from './Props'
 import States from './States'
 import Icon from './Routing'
@@ -11,6 +11,8 @@ import Defaultprops from './DefaultProp'
 import Childrenprop from './ChildrenProps'
 import TextInputWithFocusButton from './useRef'
 import App1 from './FunctionProp'
+import Data from './HigherOrderComponent'
+
 
 function App() {
   return (
@@ -30,7 +32,7 @@ function App() {
 
     {/* <Icon/> */}
 
-    <Timer/>
+    {/* <Timer/> */}
 
     {/* <Maincomponent/> */}
 
@@ -46,6 +48,8 @@ function App() {
     {/* <TextInputWithFocusButton/> */}
 
     {/* <App1/> */}
+
+    <Data/>
    
     </>
   )
