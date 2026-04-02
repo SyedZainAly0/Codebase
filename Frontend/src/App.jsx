@@ -12,6 +12,8 @@ import Childrenprop from './ChildrenProps'
 import TextInputWithFocusButton from './useRef'
 import App1 from './FunctionProp'
 import Data from './HigherOrderComponent'
+import Keys from './KeyProp'
+import Controlledcomponent from './ControlledComponent'
 
 
 function App() {
@@ -49,8 +51,12 @@ function App() {
 
     {/* <App1/> */}
 
-    <Data/>
+    {/* <Data/> */}
    
+    {/* <Keys/> */}
+    
+    <Controlledcomponent/>
+    
     </>
   )
 
