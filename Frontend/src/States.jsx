@@ -23,22 +23,21 @@
 import { useState } from "react";
 
 function States() {
-  const [name, setName] = useState("Unknown");
+ const [name, setName] = useState("Unknown");
   const [input, setInput] = useState("");
+   return (
+     <>
+       <input
+         type="text"
+         placeholder="Enter your name"
+         onChange={(e) => setInput(e.target.value)}
+     />
 
-  return (
-    <>
-      <input
-        type="text"
-        placeholder="Enter your name"
-        onChange={(e) => setInput(e.target.value)}
-      />
+     <button onClick={() => setName(input)}>Click</button>
 
-      <button onClick={() => setName(input)}>Click</button>
-
-      <p>{name}</p>
-    </>
-  );
+       <p>{name}</p>
+     </>
+   );
 }
 
 export default States;
